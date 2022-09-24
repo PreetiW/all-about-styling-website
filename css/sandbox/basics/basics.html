@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* This is internal css */
+        /* use # for ids and . for classes */
+        .aqua {
+            background-color: aquamarine;
+        }
+
+
+        /* Multiple selectors */
+        #lorem-para, #para, div {
+            background-color: cadetblue;
+            font-size: 18px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Hello!</h1>
+    <h2>Let's learn about the CSS basics together.</h2>
+    
+    <br>
+
+    <h3 style="color: slateblue;">Inline CSS</h3>
+    <p>When you specify the css inside the html tag it is called inline css</p>
+    <p>Check the code to see how we have done for the above heading</p>
+    <p>You would not want to use this way to specify styles the reason being seperation of concern so we can keep the styles seperate. It becomes much harder to read and maintain the code if you use inline css</p>
+
+
+    <h3 class="aqua">Internal CSS</h3>
+    <p>In this type the CSS stays in the same HTML page but it goes inside seperate `style` tag inside the head tag</p>
+
+    <h3 class="burly-background">External CSS</h5>
+    <p>This is a standard way of using css. We create a seperate CSS file and provide the reference for same using the <link> HTML tag</p>
+    
+
+    <h3>Multiple selectors</h3>
+    <p>Multiple selectors are useful when you would like to apply the same style to different elemtns, for eg below are two different paragraphs with different ids but we can use ids or html selectors to apply the same style</p>
+    <p id="lorem-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consectetur accusamus esse reiciendis mollitia, laboriosam sed iure praesentium eius ex.</p>
+    
+    <p id="para">This is second paragraph</p>
+
+    <div>This content is inside a div tag</div>
+
+
+
+
+</body>
+</html>
+
